@@ -1,0 +1,25 @@
+{
+  "name": "portal-digital-gampong",
+  "version": "1.0.0",
+  "description": "Aplikasi Portal Digital Gampong Standar Kadaster BPN",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --ia32"
+  },
+  "devDependencies": {
+    "electron": "9.4.4",
+    "electron-builder": "^22.14.13"
+  },
+  "build": {
+    "appId": "com.gampong.kadaster",
+    "productName": "Portal Digital Gampong",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": ["nsis"],
+      "arch": ["ia32"]
+    }
+  }
+}
